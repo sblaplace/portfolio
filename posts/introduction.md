@@ -2,7 +2,7 @@
 title: 'Introduction'
 metaTitle: 'Introduction'
 metaDesc: 'Who or what am I?'
-socialImage: images/jan-jakub-nanista-z9hvkSDWMIM-unsplash.jpg
+socialImage: images/jan-jakub-nanista-z9hvkSDWMIM-unsplash.webp
 date: '2021-09-22'
 tags:
   - intro

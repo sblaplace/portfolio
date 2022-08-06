@@ -1,3 +1,7 @@
+# Portfolio And Blog
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/172277f1-fcbc-46cb-b811-387114134445/deploy-status)](https://app.netlify.com/sites/dapper-kleicha-1e0701/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

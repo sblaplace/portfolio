@@ -8,8 +8,6 @@ tags:
   - intro
 ---
 
-# Introduction
-
 My name is Sarah Laplace, and I'm a programmer. Mostly, this means a combination
 of systems programming and solving searching and sorting problems with logic
 programming.

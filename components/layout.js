@@ -67,8 +67,8 @@ export default function Layout({ children }) {
                     </div>
                 </header>
                 <main className='container mx-auto flex-1'>{children}</main>
-                <footer className='bg-cambridgeblue bg-background-pattern m-4 mt-8 py-4'>
-                    <div className='container mx-auto flex justify-center tracking-widest font-thin text-zinc-600'>
+                <footer className='m-4 mt-8 py-4'>
+                    <div className='container mx-auto flex justify-left tracking-widest font-thin text-zinc-300'>
                         &copy; 2022 Sarah Laplace
                     </div>
                 </footer>

@@ -13,7 +13,9 @@ const MyLink = forwardRef((props, ref) => {
             </a>
         </Link>
     )
-})
+});
+
+MyLink.displayName = 'MyLink';
 
 export default function Layout({ children }) {
     const isMobile = useMediaQuery({ query: `(max-width: 760px)` });

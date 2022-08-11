@@ -32,17 +32,17 @@ const postImageLoader = ({ src, width, quality }) => {
 
 export default function Home({ posts }) {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4 md:p-0'>
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className='border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col'
+          className='m-2 overflow-hidden flex flex-col bg-overtanwindow m-2 text-lg'
         >
           <Link href={`/post/${slug}`}>
             <a>
               <Image
-                width={650}
-                height={340}
+                width={3000}
+                height={2000}
                 alt={frontmatter.title}
                 src={`/${frontmatter.socialImage}`}
                 loader={postImageLoader}

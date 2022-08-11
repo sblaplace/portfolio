@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #4a5759;
 }
 
 .footer {
@@ -57,7 +58,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #edafb8;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -116,13 +117,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }

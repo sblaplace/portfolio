@@ -39,8 +39,8 @@ export default function Home({ posts }) {
           <Link href={`/post/${slug}`}>
             <a>
               <Image
-                width={3000}
-                height={2000}
+                width={600}
+                height={400}
                 alt={frontmatter.title}
                 src={`/${frontmatter.socialImage}`}
                 loader={postImageLoader}

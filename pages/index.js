@@ -44,6 +44,7 @@ export default function Home({ posts }) {
                 alt={frontmatter.title}
                 src={`/${frontmatter.socialImage}`}
                 loader={postImageLoader}
+                placeholder={`blur`}
               />
               <h1 className='p-4'>{frontmatter.title}</h1>
             </a>

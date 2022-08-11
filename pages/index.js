@@ -36,7 +36,7 @@ export default function Home({ posts }) {
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className='m-2 overflow-hidden flex flex-col bg-overtanwindow m-2 text-lg'
+          className='m-2 overflow-hidden flex flex-col bg-timberwolf bg-background-pattern m-2 text-lg'
         >
           <Link href={`/post/${slug}`}>
             <a>

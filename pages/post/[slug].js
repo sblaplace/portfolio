@@ -1,6 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
+import Link from 'next/link';
 
 export async function getStaticPaths() {
     const files = fs.readdirSync('posts');
@@ -33,6 +34,12 @@ export default function PostPage({ frontmatter, content }) {
         <div className='prose mx-auto p-6 bg-timberwolf bg-origin-padding'>
             <h1>{frontmatter.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+            <br />
+            <div>
+                Did you appreciate this post? Do you have a technical problem that
+                you would like solved? <Link href="/contract">Contract</Link> with me
+                and we can create the program you need.
+            </div>
         </div>
     );
 }

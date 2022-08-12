@@ -20,7 +20,9 @@ export async function getStaticProps() {
 
   const hashes = await Promise.all(postsNoHashes.map((post) => getPlaiceholder(`/${post.frontmatter.socialImage}`)));
 
-  const posts = postsNoHashes.map((post, i) => { return { ...post, css: hashes[i]['css'], img: hashes[i]['img'] } });
+  const posts = postsNoHashes
+    .map((post, i) => { return { ...post, css: hashes[i]['css'], img: hashes[i]['img'] } })
+    .sort((a, b) => Date.parse(b.frontmatter['date']) - Date.parse(a.frontmatter['date']))
 
   return {
     props: {

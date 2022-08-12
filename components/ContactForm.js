@@ -1,9 +1,8 @@
 export default function ContactForm() {
     return (
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" className="min-w-full">
             <input type="hidden" name="form-name" value="contact" />
             <p>
-                <input type="text" name="firstname" id="firstname" />
                 <label htmlFor="yourname">
                     Your Name:
                 </label> <br />

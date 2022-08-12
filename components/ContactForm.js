@@ -1,6 +1,12 @@
 export default function ContactForm() {
     return (
-        <form name="contact" method="POST" data-netlify="true" className="min-w-full" data-netlify-recaptcha="true">
+        <form name="contact" method="POST" data-netlify="true" className="min-w-full" netlify-honeypot="bot-field"
+        >
+            <p className="hidden">
+                <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+            </p>
             <input type="hidden" name="form-name" value="contact" />
             <p>
                 <label htmlFor="yourname">
@@ -20,7 +26,6 @@ export default function ContactForm() {
                 </label> <br />
                 <textarea name="message" id="yourmessage"></textarea>
             </p>
-            <div data-netlify-recaptcha="true"></div>
             <p>
                 <button type="submit">Send</button>
             </p>

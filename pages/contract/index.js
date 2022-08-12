@@ -6,6 +6,7 @@ export default function AboutPage(_props) {
             <h1>Contract</h1>
             Submit the following form in order to request a contract, and I will get
             back as soon as possible.
+            <ContactForm />
         </div>
     )
 }

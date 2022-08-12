@@ -1,3 +1,3 @@
 export default function Success() {
-    return <div>Contract form submitted, I will be reaching out to you shortly</div>
+    return <div><p>{`Contract form submitted, I will be reaching out to you shortly`}</p></div>
 }
